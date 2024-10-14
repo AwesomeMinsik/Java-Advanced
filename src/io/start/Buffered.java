@@ -34,6 +34,7 @@ public class Buffered {
 //
 
         BufferedInputStream bufferedInputStream = new BufferedInputStream(new FileInputStream("temp/bufferd.dat"));
+        //버퍼 스트림은 버퍼에 대한 기능만 제공하기 때문에 대상 Stream 객체가 있어야한다.
         int fileSize = 0;
         int data;
         long start = System.currentTimeMillis();
