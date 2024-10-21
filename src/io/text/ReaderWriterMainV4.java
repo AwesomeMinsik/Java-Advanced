@@ -14,11 +14,13 @@ public class ReaderWriterMainV4 {
         System.out.println("==write string==");
         System.out.println("write = " + writeString);
 
+        //파일에 쓰기
         FileWriter fw = new FileWriter(FILE_NAME, UTF_8);
         BufferedWriter bw = new BufferedWriter(fw,BUFFER_SIZE);
         bw.write(writeString);
         bw.close();
 
+        //파일에서 읽기
         StringBuilder content = new StringBuilder();
         FileReader fr = new FileReader(FILE_NAME, UTF_8);
         BufferedReader br = new BufferedReader(fr, BUFFER_SIZE);

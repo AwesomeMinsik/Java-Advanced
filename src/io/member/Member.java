@@ -2,7 +2,7 @@ package io.member;
 
 import java.io.Serializable;
 
-public class Member implements Serializable/*객체를 직렬화 하는 마커 인터페이스*/ {
+public class Member implements Serializable/*객체를 직렬화 하는 마커 인터페이스 ** 객체를 직렬화 인터페이스 구현체로 사용하면 치명적인 문제가있음*/ {
     private String id;
     private String name;
     private Integer age;
