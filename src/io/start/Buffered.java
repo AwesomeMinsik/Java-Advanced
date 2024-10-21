@@ -4,6 +4,7 @@ import java.io.*;
 
 public class Buffered {
     public static void main(String[] args) throws IOException {
+
         /*FileOutputStream fos = new FileOutputStream("temp/bufferd.dat");
         long start = System.currentTimeMillis();
         for (int i = 0; i < 10 * 1024 * 1024; i++){
@@ -51,5 +52,6 @@ public class Buffered {
         이는 멀티스레드 환경에서의 동시성 문제를 피하기위함이며, 버퍼를 직접구현 했을때는 로컬환경에서만 작동하므로 이에대한
         추가 메서드 구현이나, 연산이 필요없기 때문에 메서드 호출 자체로 1byte 라도 쓰이는 순간 bufferedStream 이 조금더 느릴 수 밖에없는 것 같다.
         */
+
     }
 }
